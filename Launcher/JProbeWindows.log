@@ -1,0 +1,221 @@
+[04-16-2014 16:33:10:814][I][tid:3268] - ****************************************************************************
+[04-16-2014 16:33:10:814][I][tid:3268] - **              Java  VM Probe Windows Launcher Log                       **
+[04-16-2014 16:33:10:814][I][tid:3268] - ****************************************************************************
+[04-16-2014 16:33:10:814][I][tid:3268] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Apr 16 2014 16:32:56
+[04-16-2014 16:33:10:814][I][tid:3268] - Logger Starting, Log Level is Info
+[04-16-2014 16:33:10:889][I][tid:3268] - Initializing JVM Manager
+[04-16-2014 16:33:10:894][I][tid:3268] - Changing Log Level from Info to Debug
+[04-16-2014 16:33:10:894][I][tid:3268] - Running in Debug Mode
+[04-16-2014 16:33:10:947][I][tid:3268] - Loading JVM DLL C:\Java\SAP17_64\jre\bin\server\jvm.dll from Properties
+[04-16-2014 16:33:10:952][I][tid:3268] - Creating JVM With the Following Properties:
+[04-16-2014 16:33:10:953][I][tid:3268] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-Xmx1024m
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-Xms128m
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-XX:+UseConcMarkSweepGC
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-XX:+CMSIncrementalMode
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-XX:+CMSIncrementalPacing
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-XX:MaxTenuringThreshold=30
+[04-16-2014 16:33:10:953][I][tid:3268] - 	-XX:+CMSClassUnloadingEnabled
+[04-16-2014 16:33:10:954][I][tid:3268] - 	-Djava.security.policy=.\config\java.policy
+[04-16-2014 16:33:10:954][I][tid:3268] - 	-Dlog.directory=.\logs
+[04-16-2014 16:33:10:954][I][tid:3268] - Creating the JVM
+[04-16-2014 16:33:13:836][I][tid:3268] - JVM Successfully Created
+[04-16-2014 16:33:13:871][I][tid:3268] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[04-16-2014 16:33:14:835][I][tid:3268] - Class Main Method Ended, Detaching Main Thread
+[04-16-2014 16:33:14:841][I][tid:3268] - Waiting for all non-daemon threads to terminate and then destroy the JVM
+[04-16-2014 16:33:14:841][I][tid:3268] - Logger is Stopping
+[04-16-2014 16:33:14:841][I][tid:3268] - ****************************************************************************
+[04-16-2014 16:35:01:494][I][tid:10084] - ****************************************************************************
+[04-16-2014 16:35:01:494][I][tid:10084] - **              Java  VM Probe Windows Launcher Log                       **
+[04-16-2014 16:35:01:495][I][tid:10084] - ****************************************************************************
+[04-16-2014 16:35:01:495][I][tid:10084] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Apr 16 2014 16:32:56
+[04-16-2014 16:35:01:495][I][tid:10084] - Logger Starting, Log Level is Info
+[04-16-2014 16:35:01:561][I][tid:10084] - Initializing JVM Manager
+[04-16-2014 16:35:01:568][I][tid:10084] - Changing Log Level from Info to Debug
+[04-16-2014 16:35:01:569][I][tid:10084] - Running in Debug Mode
+[04-16-2014 16:35:01:639][I][tid:10084] - Loading JVM DLL C:\Java\SAP17_655\jre\bin\server\jvm.dll from Properties
+[04-16-2014 16:35:01:639][E][tid:10084] - Load of JVM.dll from config failed, looking in JAVA_HOME
+[04-16-2014 16:35:01:840][I][tid:10084] - Creating JVM With the Following Properties:
+[04-16-2014 16:35:01:841][I][tid:10084] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[04-16-2014 16:35:01:841][I][tid:10084] - 	-Xmx1024m
+[04-16-2014 16:35:01:841][I][tid:10084] - 	-Xms128m
+[04-16-2014 16:35:01:841][I][tid:10084] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[04-16-2014 16:35:01:841][I][tid:10084] - 	-XX:+UseConcMarkSweepGC
+[04-16-2014 16:35:01:841][I][tid:10084] - 	-XX:+CMSIncrementalMode
+[04-16-2014 16:35:01:842][I][tid:10084] - 	-XX:+CMSIncrementalPacing
+[04-16-2014 16:35:01:842][I][tid:10084] - 	-XX:MaxTenuringThreshold=30
+[04-16-2014 16:35:01:842][I][tid:10084] - 	-XX:+CMSClassUnloadingEnabled
+[04-16-2014 16:35:01:842][I][tid:10084] - 	-Djava.security.policy=.\config\java.policy
+[04-16-2014 16:35:01:842][I][tid:10084] - 	-Dlog.directory=.\logs
+[04-16-2014 16:35:01:842][I][tid:10084] - Creating the JVM
+[04-16-2014 16:35:05:978][I][tid:10084] - JVM Successfully Created
+[04-16-2014 16:35:06:367][I][tid:10084] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[04-16-2014 16:35:09:848][I][tid:10084] - Class Main Method Ended, Detaching Main Thread
+[04-16-2014 16:35:09:853][I][tid:10084] - Waiting for all non-daemon threads to terminate and then destroy the JVM
+[04-16-2014 16:35:09:854][I][tid:10084] - Logger is Stopping
+[04-16-2014 16:35:09:855][I][tid:10084] - ****************************************************************************
+[04-16-2014 16:54:03:928][I][tid:9912] - ****************************************************************************
+[04-16-2014 16:54:03:928][I][tid:9912] - **              Java  VM Probe Windows Launcher Log                       **
+[04-16-2014 16:54:03:928][I][tid:9912] - ****************************************************************************
+[04-16-2014 16:54:03:928][I][tid:9912] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Apr 16 2014 16:32:56
+[04-16-2014 16:54:03:928][I][tid:9912] - Logger Starting, Log Level is Info
+[04-16-2014 16:54:04:011][I][tid:9912] - Initializing JVM Manager
+[04-16-2014 16:54:04:017][I][tid:9912] - Changing Log Level from Info to Debug
+[04-16-2014 16:54:04:018][I][tid:9912] - Running in Debug Mode
+[04-16-2014 16:54:04:083][I][tid:9912] - Loading JVM DLL C:\Java\SAP17_655\jre\bin\server\jvm.dll from Properties
+[04-16-2014 16:54:04:084][E][tid:9912] - Load of JVM.dll from config failed, looking in JAVA_HOME
+[04-16-2014 16:54:04:085][E][tid:9912] - Failed to load jvm dll from JAVA_HOME at нннннннннннннннннннннннннннннннннннннннннннннннннннн0, Error is The specified module could not be found.
+
+
+[04-16-2014 16:56:37:041][I][tid:7892] - ****************************************************************************
+[04-16-2014 16:56:37:041][I][tid:7892] - **              Java  VM Probe Windows Launcher Log                       **
+[04-16-2014 16:56:37:041][I][tid:7892] - ****************************************************************************
+[04-16-2014 16:56:37:041][I][tid:7892] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Apr 16 2014 16:32:56
+[04-16-2014 16:56:37:041][I][tid:7892] - Logger Starting, Log Level is Info
+[04-16-2014 16:56:37:114][I][tid:7892] - Initializing JVM Manager
+[04-16-2014 16:56:37:114][I][tid:7892] - Changing Log Level from Info to Debug
+[04-16-2014 16:56:37:114][I][tid:7892] - Running in Debug Mode
+[04-16-2014 16:56:37:173][I][tid:7892] - Loading JVM DLL C:\Java\SAP17_655\jre\bin\server\jvm.dll from Properties
+[04-16-2014 16:56:37:174][E][tid:7892] - Load of JVM.dll from config failed, looking in JAVA_HOME
+[04-16-2014 16:56:37:180][I][tid:7892] - JVM dll Loaded from C:\Java\SAP17_64\jre\bin\server\jvm.dll based on JAVA_HOME of C:\Java\SAP17_64
+
+[04-16-2014 16:56:37:180][I][tid:7892] - JNI_CreateJavaVM Function Address is 000000006D8754F0
+[04-16-2014 16:56:37:180][I][tid:7892] - Creating JVM With the Following Properties:
+[04-16-2014 16:56:37:180][I][tid:7892] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[04-16-2014 16:56:37:180][I][tid:7892] - 	-Xmx1024m
+[04-16-2014 16:56:37:180][I][tid:7892] - 	-Xms128m
+[04-16-2014 16:56:37:180][I][tid:7892] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[04-16-2014 16:56:37:180][I][tid:7892] - 	-XX:+UseConcMarkSweepGC
+[04-16-2014 16:56:37:180][I][tid:7892] - 	-XX:+CMSIncrementalMode
+[04-16-2014 16:56:37:181][I][tid:7892] - 	-XX:+CMSIncrementalPacing
+[04-16-2014 16:56:37:181][I][tid:7892] - 	-XX:MaxTenuringThreshold=30
+[04-16-2014 16:56:37:181][I][tid:7892] - 	-XX:+CMSClassUnloadingEnabled
+[04-16-2014 16:56:37:181][I][tid:7892] - 	-Djava.security.policy=.\config\java.policy
+[04-16-2014 16:56:37:181][I][tid:7892] - 	-Dlog.directory=.\logs
+[04-16-2014 16:56:37:181][I][tid:7892] - Creating the JVM
+[04-16-2014 16:56:39:906][I][tid:7892] - JVM Successfully Created
+[04-16-2014 16:56:39:945][I][tid:7892] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[04-16-2014 16:56:40:887][I][tid:7892] - Class Main Method Ended, Detaching Main Thread
+[04-16-2014 16:56:40:893][I][tid:7892] - Waiting for all non-daemon threads to terminate, the JVM will then be Destroyed.
+[04-16-2014 16:56:40:893][I][tid:7892] - Launcher is Exiting
+[04-16-2014 16:56:40:896][I][tid:7892] - Logger is Stopping
+[04-16-2014 16:56:40:900][I][tid:7892] - ****************************************************************************
+[02-10-2017 17:35:18:196][I][tid:22708] - ****************************************************************************
+[02-10-2017 17:35:18:197][I][tid:22708] - **              Java  VM Probe Windows Launcher Log                       **
+[02-10-2017 17:35:18:197][I][tid:22708] - ****************************************************************************
+[02-10-2017 17:35:18:197][I][tid:22708] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Feb 10 2017 17:28:10
+[02-10-2017 17:35:18:197][I][tid:22708] - Logger Starting, Log Level is Info
+[02-10-2017 17:35:18:252][I][tid:22708] - Initializing JVM Manager
+[02-10-2017 17:35:18:257][I][tid:22708] - Changing Log Level from Info to Debug
+[02-10-2017 17:35:18:258][I][tid:22708] - Running in Debug Mode
+[02-10-2017 17:35:18:296][I][tid:22708] - Loading JVM DLL C:\Java\jdk1.8.0\jre\bin\server\jvm.dll from Properties
+[02-10-2017 17:35:18:303][I][tid:22708] - JNI_CreateJavaVM Function Address is 0x00000000663E9F10
+[02-10-2017 17:35:18:303][I][tid:22708] - Creating JVM With the Following Properties:
+[02-10-2017 17:35:18:303][I][tid:22708] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[02-10-2017 17:35:18:304][I][tid:22708] - 	-Xmx1024m
+[02-10-2017 17:35:18:304][I][tid:22708] - 	-Xms128m
+[02-10-2017 17:35:18:304][I][tid:22708] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[02-10-2017 17:35:18:304][I][tid:22708] - Creating the JVM
+[02-10-2017 17:35:21:280][I][tid:22708] - JVM Successfully Created
+[02-10-2017 17:35:21:341][I][tid:22708] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[02-10-2017 17:35:22:775][I][tid:22708] - Class Main Method Ended, Detaching Main Thread
+[02-10-2017 17:35:22:775][I][tid:22708] - Waiting for all non-daemon threads to terminate, the JVM will then be Destroyed.
+[02-10-2017 17:35:22:775][I][tid:22708] - Launcher is Exiting
+[02-10-2017 17:35:22:775][I][tid:22708] - Logger is Stopping
+[02-10-2017 17:35:22:775][I][tid:22708] - ****************************************************************************
+[02-14-2017 14:56:57:028][I][tid:42408] - ****************************************************************************
+[02-14-2017 14:56:57:028][I][tid:42408] - **              Java  VM Probe Windows Launcher Log                       **
+[02-14-2017 14:56:57:029][I][tid:42408] - ****************************************************************************
+[02-14-2017 14:56:57:029][I][tid:42408] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Feb 14 2017 14:47:00
+[02-14-2017 14:56:57:029][I][tid:42408] - Logger Starting, Log Level is Info
+[02-14-2017 14:57:01:813][I][tid:42408] - Initializing JVM Manager
+[02-14-2017 14:57:01:815][I][tid:42408] - Changing Log Level from Info to Debug
+[02-14-2017 14:57:01:816][I][tid:42408] - Running in Debug Mode
+[02-14-2017 14:57:16:648][I][tid:42408] - Loading JVM DLL C:\Java\jdk1.8.0\jre\bin\server\jvm.dll from Properties
+[02-14-2017 14:57:19:715][I][tid:42408] - JNI_CreateJavaVM Function Address is 0x0000000070359F10
+[02-14-2017 14:57:19:716][I][tid:42408] - Creating JVM With the Following Properties:
+[02-14-2017 14:57:19:716][I][tid:42408] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 14:57:19:716][I][tid:42408] - 	-Xmx1024m
+[02-14-2017 14:57:19:716][I][tid:42408] - 	-Xms128m
+[02-14-2017 14:57:19:717][I][tid:42408] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[02-14-2017 14:57:19:717][I][tid:42408] - Creating the JVM
+[02-14-2017 14:57:26:253][I][tid:42408] - JVM Successfully Created
+[02-14-2017 14:57:37:130][I][tid:42408] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:35:08:609][I][tid:40368] - ****************************************************************************
+[02-14-2017 15:35:08:610][I][tid:40368] - **              Java  VM Probe Windows Launcher Log                       **
+[02-14-2017 15:35:08:610][I][tid:40368] - ****************************************************************************
+[02-14-2017 15:35:08:610][I][tid:40368] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Feb 14 2017 14:47:00
+[02-14-2017 15:35:08:610][I][tid:40368] - Logger Starting, Log Level is Info
+[02-14-2017 15:35:20:343][I][tid:40368] - Initializing JVM Manager
+[02-14-2017 15:35:20:344][I][tid:40368] - Changing Log Level from Info to Debug
+[02-14-2017 15:35:20:344][I][tid:40368] - Running in Debug Mode
+[02-14-2017 15:35:28:726][I][tid:40368] - Loading JVM DLL C:\Java\jdk1.8.0\jre\bin\server\jvm.dll from Properties
+[02-14-2017 15:35:30:151][I][tid:40368] - JNI_CreateJavaVM Function Address is 0x0000000070359F10
+[02-14-2017 15:35:30:151][I][tid:40368] - Creating JVM With the Following Properties:
+[02-14-2017 15:35:30:152][I][tid:40368] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:35:30:152][I][tid:40368] - 	-Xmx1024m
+[02-14-2017 15:35:30:152][I][tid:40368] - 	-Xms128m
+[02-14-2017 15:35:30:153][I][tid:40368] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[02-14-2017 15:35:30:153][I][tid:40368] - Creating the JVM
+[02-14-2017 15:35:38:921][I][tid:40368] - JVM Successfully Created
+[02-14-2017 15:35:46:340][I][tid:40368] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:36:56:455][I][tid:40944] - ****************************************************************************
+[02-14-2017 15:36:56:455][I][tid:40944] - **              Java  VM Probe Windows Launcher Log                       **
+[02-14-2017 15:36:56:455][I][tid:40944] - ****************************************************************************
+[02-14-2017 15:36:56:456][I][tid:40944] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Feb 14 2017 14:47:00
+[02-14-2017 15:36:56:456][I][tid:40944] - Logger Starting, Log Level is Info
+[02-14-2017 15:36:56:595][I][tid:40944] - Initializing JVM Manager
+[02-14-2017 15:36:56:603][I][tid:40944] - Changing Log Level from Info to Debug
+[02-14-2017 15:36:56:606][I][tid:40944] - Running in Debug Mode
+[02-14-2017 15:36:56:722][I][tid:40944] - Loading JVM DLL C:\Java\jdk1.8.0\jre\bin\server\jvm.dll from Properties
+[02-14-2017 15:36:56:776][I][tid:40944] - JNI_CreateJavaVM Function Address is 0x0000000070359F10
+[02-14-2017 15:36:56:776][I][tid:40944] - Creating JVM With the Following Properties:
+[02-14-2017 15:36:56:776][I][tid:40944] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:36:56:776][I][tid:40944] - 	-Xmx1024m
+[02-14-2017 15:36:56:777][I][tid:40944] - 	-Xms128m
+[02-14-2017 15:36:56:777][I][tid:40944] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[02-14-2017 15:36:56:777][I][tid:40944] - Creating the JVM
+[02-14-2017 15:37:05:930][I][tid:40944] - JVM Successfully Created
+[02-14-2017 15:38:01:672][I][tid:40944] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:39:29:008][I][tid:38324] - ****************************************************************************
+[02-14-2017 15:39:29:008][I][tid:38324] - **              Java  VM Probe Windows Launcher Log                       **
+[02-14-2017 15:39:29:008][I][tid:38324] - ****************************************************************************
+[02-14-2017 15:39:29:009][I][tid:38324] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Feb 14 2017 15:39:04
+[02-14-2017 15:39:29:009][I][tid:38324] - Logger Starting, Log Level is Info
+[02-14-2017 15:39:29:124][I][tid:38324] - Initializing JVM Manager
+[02-14-2017 15:39:29:130][I][tid:38324] - Changing Log Level from Info to Debug
+[02-14-2017 15:39:29:131][I][tid:38324] - Running in Debug Mode
+[02-14-2017 15:39:29:169][I][tid:38324] - Loading JVM DLL C:\Java\jdk1.8.0\jre\bin\server\jvm.dll from Properties
+[02-14-2017 15:39:29:180][I][tid:38324] - JNI_CreateJavaVM Function Address is 0x0000000070359F10
+[02-14-2017 15:39:29:180][I][tid:38324] - Creating JVM With the Following Properties:
+[02-14-2017 15:39:29:180][I][tid:38324] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:39:29:181][I][tid:38324] - 	-Xmx1024m
+[02-14-2017 15:39:29:181][I][tid:38324] - 	-Xms128m
+[02-14-2017 15:39:29:181][I][tid:38324] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[02-14-2017 15:39:29:181][I][tid:38324] - Creating the JVM
+[02-14-2017 15:39:37:437][I][tid:38324] - JVM Successfully Created
+[02-14-2017 15:39:37:590][I][tid:38324] - Calling Main Class edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:39:41:048][I][tid:38324] - Class Main Method Ended, Detaching Main Thread
+[02-14-2017 15:39:41:051][I][tid:38324] - Waiting for all non-daemon threads to terminate, the JVM will then be Destroyed.
+[02-14-2017 15:39:41:051][I][tid:38324] - Launcher is Exiting
+[02-14-2017 15:39:41:051][I][tid:38324] - Logger is Stopping
+[02-14-2017 15:39:41:056][I][tid:38324] - ****************************************************************************
+[02-14-2017 15:40:21:039][I][tid:42664] - ****************************************************************************
+[02-14-2017 15:40:21:039][I][tid:42664] - **              Java  VM Probe Windows Launcher Log                       **
+[02-14-2017 15:40:21:039][I][tid:42664] - ****************************************************************************
+[02-14-2017 15:40:21:040][I][tid:42664] - Source File Version 3.1.2.0 - Logger.cpp Compiled On Feb 14 2017 15:39:04
+[02-14-2017 15:40:21:040][I][tid:42664] - Logger Starting, Log Level is Info
+[02-14-2017 15:40:21:147][I][tid:42664] - Initializing JVM Manager
+[02-14-2017 15:40:21:154][I][tid:42664] - Changing Log Level from Info to Debug
+[02-14-2017 15:40:21:155][I][tid:42664] - Running in Debug Mode
+[02-14-2017 15:40:21:225][I][tid:42664] - Loading JVM DLL C:\Java\jdk1.8.0\jre\bin\server\jvm.dll from Properties
+[02-14-2017 15:40:21:280][I][tid:42664] - JNI_CreateJavaVM Function Address is 0x0000000070359F10
+[02-14-2017 15:40:21:280][I][tid:42664] - Creating JVM With the Following Properties:
+[02-14-2017 15:40:21:280][I][tid:42664] - 	Main Class = edu/regis/jprobe/ui/JProbeUI
+[02-14-2017 15:40:21:281][I][tid:42664] - 	-Xmx1024m
+[02-14-2017 15:40:21:281][I][tid:42664] - 	-Xms128m
+[02-14-2017 15:40:21:281][I][tid:42664] - 	-javaagent:c:\JProbe\JProbe.jar=Container
+[02-14-2017 15:40:21:281][I][tid:42664] - Creating the JVM
+[02-14-2017 15:40:27:530][I][tid:42664] - JVM Successfully Created
+[02-14-2017 15:40:30:980][I][tid:42664] - Calling Main Class edu/regis/jprobe/ui/JProbeUI

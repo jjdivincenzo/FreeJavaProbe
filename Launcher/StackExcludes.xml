@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>JProbe Stack Exclude Filters</comment>
+<entry key="Filter5">org.xml.</entry>
+<entry key="Filter4">org.apache.</entry>
+<entry key="Filter3">sun.</entry>
+<entry key="Filter2">com.sun.</entry>
+<entry key="Filter1">javax.</entry>
+<entry key="Filter0">java.</entry>
+<entry key="Filter7">org.testng.</entry>
+<entry key="Filter6">junit.</entry>
+</properties>

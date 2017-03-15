@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: 
+Created-By: 
+Premain-Class: edu.regis.jprobe.agent.JProbeStub
+Can-Redefine-Classes: false
+Main-Class: edu.regis.jprobe.ui.JProbeUI
+SplashScreen-Image: splash.gif
