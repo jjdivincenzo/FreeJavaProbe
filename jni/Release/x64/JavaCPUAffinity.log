@@ -1,0 +1,20 @@
+﻿Build started 4/18/2014 11:29:00 AM.
+     1>Project "C:\git\MyStuff\Z_JProbe\jni\JavaCPUAffinity.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:\Java\jdk1.7.0_06\include\win32 /IC:\Java\jdk1.7.0_06\include /IC:\jprobe\jni /Zi /nologo /W3 /WX- /O2 /D WIN32 /D _WINDOWS /D _USRDLL /D _CRT_SECURE_NO_DEPRECATE /D WIN64 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\x64\\" /Fd"Release\x64\vc110.pdb" /Gd /TP /errorReport:prompt OSSystemInfo.cpp SystemInfo.cpp
+         OSSystemInfo.cpp
+         SystemInfo.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"Release\x64\JavaOSInfo.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Lib" Advapi32.lib Shell32.lib /DEF:"JavaOSInfo.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /PDB:"Release\x64\JavaOSInfo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\x64\JavaOSInfo.lib" /MACHINE:X64 /DLL Release\x64\JavaCPUAffinity.res
+         Release\x64\JavaOSInfo.obj
+         Release\x64\OSSystemInfo.obj
+         Release\x64\stdafx.obj
+         Release\x64\SystemInfo.obj
+         JavaCPUAffinity.vcxproj -> C:\git\MyStuff\Z_JProbe\jni\Release\x64\JavaOSInfo.dll
+     1>Done Building Project "C:\git\MyStuff\Z_JProbe\jni\JavaCPUAffinity.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.87

@@ -1,0 +1,7 @@
+edu.regis.jprobe.agent
+edu.regis.jprobe.agent.mbean
+edu.regis.jprobe.jni
+edu.regis.jprobe.model
+edu.regis.jprobe.ui
+edu.regis.jprobe.ui.helpers
+edu.regis.jprobe.ui.themes

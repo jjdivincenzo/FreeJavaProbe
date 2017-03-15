@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+
+<!-- ======================================================================= -->
+<!--     Batch_Apps Project Build file                                       -->
+<!-- ======================================================================= -->
+
+<project name="${name}" default="compile" basedir="../">
+
+  <!-- ===================================================================
+       source all property files and define any defaults needed - first
+       definition of a property wins. Command line (-Dfoo=bar) comes first,
+       then each <property> file include, and finally the defaults
+       NOTE: These can't be done in a target, as they are used in <path>
+       elements.
+       =================================================================== -->
+
+
+  <!--  **************************************************************  -->
+  <!--  MAY WANT TO SWITCH bin/*.properties to config/ant/*.properties  -->
+  <!--  **************************************************************  -->
+
+
+  <!-- Finally define the defaults -->
+  <property name="build.compiler" value="modern" />
+
+  <!-- ========================================
+        Project Properties
+       ========================================  -->
+
+  <!-- Finally define the defaults -->
+  <property name="home"              value="c:/MyJavaTools/JProbe"/>
+  <property name="src.dir"           value="${home}/src"/>
+  <property name="jar.name"	         value="${home}/JProbe.jar" />
+  <property name="app.src.dir"       value="${src.dir}"/>
+  <property name="build.dir"         value="${home}/classes"/>
+  <property name="lib.dir"           value="${home}/lib"/>
+  <property name="javadoc.dir"       value="${home}/javadoc"/>
+  <property name="javadoc.packages"  value="edu.regis.jprobe.*"/>
+  <property name="jar.includes"      value="${lib.dir}/*.jar"/>
+  <property name="jfreechart"	     value="${lib.dir}/jfreechart-1.0.10.jar"/>
+  <property name="jcommon"	         value="${lib.dir}/jcommon-1.0.13.jar"/>
+  <property name="guitools"	         value="${lib.dir}/GUITools.jar"/>
+  <property name="name"              value="JProbe" />
+
+  <!-- end property definition -->
+
+  <!-- ===================================================================
+       build the various classpaths needed  - these are the pieces
+       =================================================================== -->
+
+  <!-- stuff from the project itself - any ext jars, etc. DO NOT put the
+       project classes directory here, or anywhere -->
+  <path id="classpath.project.ref">
+    <fileset dir="${lib.dir}" >
+      <include name="**/*.jar" />
+      <include name="**/*.zip" />
+    </fileset >
+  </path>
+
+   
+    
+  <!-- ===================================================================
+       assemble the actual classpaths from the bits and pieces defined above.
+       Change these based on whether or not you're using commerce server or not,
+       or other optional features.
+       =================================================================== -->
+  <path id="classpath.compile.ref">
+    <path refid="classpath.project.ref" />
+  </path>
+
+
+  <!-- ===================================================================
+       The init target just sets the timestamp for all following operations
+       =================================================================== -->
+
+  <target name="init">
+    <tstamp/>
+  </target>
+
+  <!-- ===================================================================
+       Creates the build directory if necessary
+       =================================================================== -->
+  <target name="prepare" depends="init">
+    <mkdir dir="${build.dir}" />
+    <mkdir dir="${javadoc.dir}" />
+  </target>
+
+  <!-- ===================================================================
+       Deletes all of the *.class files the build directory, but doesn't
+       delete the empty directory tree, or any other files in the tree. If
+       *.properties and *.xml files are to be deleted too, then add a
+       fileset tag for them too.
+       =================================================================== -->
+  <target name="clean" depends="prepare">
+    <echo message="Cleaning JProbe Classes " />
+     <delete dir="${build.dir}"/>
+     <delete dir="${javadoc.dir}"/>
+  </target>
+
+
+  <!-- ===================================================================
+       Compiles.
+       =================================================================== -->
+  <target name="compile" depends="prepare">
+  
+  	<echo message="Compiling JProbe Classes " />
+	<javac source="1.8" srcdir="${src.dir}" destdir="${build.dir}"
+            classpathref="classpath.compile.ref" memoryinitialsize="256m"
+            memorymaximumsize="1024m" fork="true"
+            includes="**/*.java" debug="true" deprecation="${deprecations}"
+			includeAntRuntime="yes" />
+    
+  </target>
+  
+  <target name="jni" depends="compile">
+    <echo message="Building JNI Header file. " />
+  	<javah outputFile="${basedir}/jni/OSSystemInfo.h" 
+           classpath ="${build.dir}" 
+           class="edu.regis.jprobe.jni.OSSystemInfo"/>
+  </target>
+   <!-- ===================================================================
+       Compiles.
+       =================================================================== -->
+  <target name="expand" depends="jni">
+     <echo message="Expanding External jar dependencies " />
+     <exec executable="jar" dir="${build.dir}">
+        <arg value="xf" />
+        <arg value="${jfreechart}" />
+     </exec>
+     <exec executable="jar" dir="${build.dir}">
+        <arg value="xf" />
+        <arg value="${jcommon}" />
+     </exec>
+     <exec executable="jar" dir="${build.dir}">
+        <arg value="xf" />
+        <arg value="${guitools}" />
+     </exec>
+
+     
+  </target>
+
+<!-- ===================================================================
+       Creates the jar file
+       =================================================================== -->
+  <target name="jar" depends="expand">
+  	<echo message="Copying resources"/>
+  	<mkdir dir="${build.dir}/edu/regis/jprobe/ui/resources"/>
+ 	<copy todir="${build.dir}/edu/regis/jprobe/ui/resources" verbose="true">
+ 		<fileset dir="${app.src.dir}/edu/regis/jprobe/ui/resources"/>
+ 	</copy>
+ 	<echo message="Building Jar File"/>
+    <jar destfile="${jar.name}" manifest="${home}/MANIFEST.MF" basedir="${build.dir}" >
+    	<!--fileset dir="${build.dir}">
+                <include name="edu/**"/>
+                <include name="org/**"/>
+                <include name="com/**"/>
+        </fileset-->
+    </jar>  
+  
+  </target>
+
+  <!-- ===================================================================
+       Creates the API documentation
+       =================================================================== -->
+  <target name="doc" depends="prepare">
+    <echo message="Building Javadoc" />
+    <mkdir dir="${javadoc.dir}"/>
+    <delete>
+      <fileset dir="${javadoc.dir}" excludes="**/*.gif" />
+    </delete>
+    <javadoc packagenames="${javadoc.packages}"
+             sourcepath="${app.src.dir}"
+             destdir="${javadoc.dir}"
+             author="true"
+             version="true"
+             private="true"
+             windowtitle="JProbe"
+             doctitle="${name}">
+      <classpath refid="classpath.compile.ref" />
+    </javadoc>
+  </target>  
+ 
+ 
+ 
+  
+
+  <!-- ===================================================================
+       ANT information
+       =================================================================== -->
+  <target name="help">
+    <echo message="ANT Help Information:"/>       
+    <echo message=""/>
+    <echo message="ant                      - builds java source files"/>
+    <echo message="ant compile              - same as typing ant with no args following"/>
+    <echo message="ant clean                - deletes all previously built class files"/>
+    <echo message="ant doc                  - generates javadoc for application"/>
+    <echo message="ant jar                  - Creates Jar File"/>
+</target> 
+
+</project>
+
+

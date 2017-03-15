@@ -1,0 +1,6 @@
+; JavaCPUAffinity.def : Declares the module parameters for the DLL.
+
+LIBRARY      "JavaOSInfo"
+
+EXPORTS
+    ; Explicit exports can go here

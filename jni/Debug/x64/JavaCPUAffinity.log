@@ -1,0 +1,17 @@
+﻿Build started 4/18/2014 11:24:10 AM.
+     1>Project "C:\git\MyStuff\Z_JProbe\jni\JavaCPUAffinity.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:\Java\jdk1.7.0_06\include\win32 /IC:\Java\jdk1.7.0_06\include /IC:\JProbe\jni /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _CRT_SECURE_NO_DEPRECATE /D WIN64 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\x64\\" /Fd"Debug\x64\vc110.pdb" /Gd /TP /errorReport:prompt OSSystemInfo.cpp
+         OSSystemInfo.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\x64\JavaOSInfo.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Lib" Advapi32.lib Shell32.lib /DEF:"JavaOSInfo.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"Debug\x64\JavaOSInfo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\x64\JavaOSInfo.lib" /MACHINE:X64 /DLL Debug\x64\JavaCPUAffinity.res
+         Debug\x64\JavaOSInfo.obj
+         Debug\x64\OSSystemInfo.obj
+         Debug\x64\stdafx.obj
+         Debug\x64\SystemInfo.obj
+         JavaCPUAffinity.vcxproj -> C:\git\MyStuff\Z_JProbe\jni\Debug\x64\JavaOSInfo.dll
+     1>Done Building Project "C:\git\MyStuff\Z_JProbe\jni\JavaCPUAffinity.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.36
